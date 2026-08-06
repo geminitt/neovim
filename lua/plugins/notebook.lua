@@ -9,7 +9,6 @@ return {
       "nvim-tree/nvim-web-devicons",
       "folke/snacks.nvim",
     },
-    ft = { "ipynb" },
     opts = {},
   },
 
