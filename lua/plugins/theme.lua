@@ -37,7 +37,13 @@ local themes = {
 
   solarized = {
     repo = "maxmx03/solarized.nvim",
-    opts = {},
+    opts = {
+      styles = {
+        comments = { italic = true, bold = false },
+        functions = { italic = true },
+        variables = { italic = false },
+      },
+    },
   },
 }
 
