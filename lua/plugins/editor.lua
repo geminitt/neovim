@@ -1,5 +1,3 @@
--- ~/.config/nvim/lua/plugins/editor.lua
-
 return {
   -- Auto-close pairs
   {

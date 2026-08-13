@@ -1,5 +1,3 @@
--- after/ftplugin/cpp.lua
-
 local opts = { buffer = true, silent = true }
 
 local function cpp_run()

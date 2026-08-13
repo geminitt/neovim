@@ -1,5 +1,3 @@
--- ~/.config/nvim/lua/plugins/theme.lua
-
 local themes = {
   tokyonight = {
     repo = "folke/tokyonight.nvim",

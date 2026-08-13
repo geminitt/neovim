@@ -1,5 +1,3 @@
--- lua/utils.lua
-
 local M = {}
 
 ---@param name string

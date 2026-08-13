@@ -1,5 +1,3 @@
--- ~/.config/nvim/init.lua
-
 -- Set leader key
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "

@@ -1,5 +1,3 @@
--- ~/.config/nvim/lua/plugins/ui.lua
-
 return {
   -- Statusline
   {

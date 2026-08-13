@@ -1,5 +1,3 @@
--- ~/.config/nvim/lua/plugins/notebook.lua
-
 return {
   {
     "ajbucci/ipynb.nvim",
