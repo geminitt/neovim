@@ -23,7 +23,7 @@ return {
         lualine_y = {},
         lualine_z = {},
       },
-      extensions = { "nvim-tree", "toggleterm" },
+      extensions = { "oil", "toggleterm" },
     },
     config = function(_, opts)
       local function locationSection()
@@ -66,14 +66,6 @@ return {
           icon = '',
         },
         diagnostics = "nvim_lsp",
-        offsets = {
-          {
-            filetype = "NvimTree",
-            text = "File Explorer",
-            text_align = "center",
-            separator = true
-          }
-        },
       },
       highlights = {
         buffer_selected = {
@@ -86,9 +78,6 @@ return {
       { "<Tab>", "<cmd>BufferLineCycleNext<CR>", desc = "Next buffer" },
       { "<S-Tab>", "<cmd>BufferLineCyclePrev<CR>", desc = "Previous buffer" },
     },
-    config = function(_, opts)
-      require('bufferline').setup(opts)
-    end,
   },
 
   -- Folding
