@@ -71,16 +71,4 @@ return {
       })
     end,
   },
-
-  {
-    "nvimdev/lspsaga.nvim",
-    dependencies = {
-      "nvim-treesitter/nvim-treesitter",
-      "nvim-tree/nvim-web-devicons",
-    },
-    opts = {},
-    keys = {
-      { "<leader>rn", "<cmd>Lspsaga rename<cr>", desc = "rename variable" },
-    },
-  },
 }
