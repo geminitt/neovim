@@ -32,19 +32,4 @@ return {
       scope = { enabled = true },
     },
   },
-
-  {
-    "ray-x/lsp_signature.nvim",
-    event = "VeryLazy",
-    opts = {
-      bind = true,
-      floating_window = false,
-      hint_enable = true,
-      hint_prefix = "👻 <󰊕> ",
-      toggle_key = '<C-s>',
-    },
-    config = function(_, opts)
-      require('lsp_signature').setup(opts)
-    end,
-  },
 }
