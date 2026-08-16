@@ -62,10 +62,11 @@ return {
     opts = {
       options = {
         mode = "buffers",
-        indicator = {
-          icon = '',
-        },
-        diagnostics = "nvim_lsp",
+        diagnostics = false,
+        show_buffer_close_icons = false,
+        show_close_icon = false,
+        separator_style = 'thin',
+        indicator = { style = 'none' },
       },
       highlights = {
         buffer_selected = {
@@ -126,5 +127,11 @@ return {
         desc = "Buffer Local Keymaps (which-key)",
       },
     },
+  },
+
+  {
+    "lewis6991/gitsigns.nvim",
+    event = "BufReadPre",
+    config = true,
   },
 }

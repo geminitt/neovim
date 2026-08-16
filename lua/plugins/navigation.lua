@@ -4,12 +4,9 @@ return {
     'akinsho/toggleterm.nvim',
     version = "*",
     opts = {
-      open_mapping = [[<C-\>]],
+      open_mapping = [[<C-t>]],
       direction = 'float',
     },
-    config = function(_, opts)
-      require('toggleterm').setup(opts)
-    end,
   },
 
   -- Fuzzy finding

@@ -6,8 +6,9 @@ return {
     build = ":TSUpdate",
     config = function()
       vim.opt.rtp:prepend(vim.fn.stdpath("data") .. "/site")
+
       local ts = require("nvim-treesitter")
-      local parsers = { 'python', 'markdown', 'markdown_inline', 'lua', 'vim', 'bash', 'c', 'cpp', 'json' }
+      local parsers = { 'python', 'bash', 'cpp', 'json' }
 
       ts.install(parsers)
       ts.setup()

@@ -83,11 +83,6 @@ return {
             ellipsis_char = '...',
           })
         },
-
-        completion = {
-          autocomplete = { require('cmp.types').cmp.TriggerEvent.TextChanged },
-          completeopt = 'menu,menuone,noinsert',
-        },
       })
     end,
   },
