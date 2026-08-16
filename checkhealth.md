@@ -20,17 +20,10 @@ luarocks ~
    - disable `luarocks` support completely with `opts.rocks.enabled = false`
 
 ==============================================================================
-lspconfig:                                                                  ✅
-
-- Skipped. This healthcheck is redundant with `:checkhealth vim.lsp`.
-
-==============================================================================
-mason:                                                                   11 ⚠️
+mason:                                                                   10 ⚠️
 
 mason.nvim ~
-- ⚠️ WARNING mason.nvim version v2.2.1
-  - ADVICE:
-    - The latest version of mason.nvim is: v2.3.1
+- ✅ OK mason.nvim version v2.3.1
 - ✅ OK PATH: prepend
 - ✅ OK Providers: 
     mason.providers.registry-api
@@ -38,7 +31,7 @@ mason.nvim ~
 - ✅ OK neovim version >= 0.10.0
 
 mason.nvim [Registries] ~
-- ✅ OK Registry `github.com/mason-org/mason-registry version: 2026-06-15-used-ferry` is installed.
+- ✅ OK Registry `github.com/mason-org/mason-registry version: 2026-08-15-absent-plow` is installed.
 - ✅ OK Registry `SynthesizedRegistrySource` is installed.
 
 mason.nvim [Core utils] ~
@@ -86,58 +79,15 @@ mason.nvim [Languages] ~
   - ADVICE:
     - spawn: julia failed with exit code - and signal -. Could not find executable "julia" in PATH.
 
-- ✅ OK python: `Python 3.14.4`
 - ✅ OK node: `v24.15.0`
 - ✅ OK Go: `go version go1.22.12 linux/amd64`
+- ✅ OK python: `Python 3.14.4`
 - ⚠️ WARNING pip: not available
   - ADVICE:
     - spawn: python3 failed with exit code 1 and signal 0. /usr/bin/python3: No module named pip
 
 - ✅ OK python venv: `Ok`
 - ✅ OK npm: `11.12.1`
-
-==============================================================================
-mason-lspconfig:                                                            ✅
-
-mason-lspconfig.nvim ~
-- ✅ OK Neovim v0.11
-- ✅ OK mason.nvim v2
-
-==============================================================================
-nvim-treesitter:                                                          1 ❌
-
-Requirements ~
-- ✅ OK Neovim was compiled with tree-sitter runtime ABI version 15 (required >=13).
-- ✅ OK tree-sitter-cli 0.26.9 (/home/tkt31/.local/share/mise/installs/tree-sitter/latest/tree-sitter)
-- ✅ OK tar 1.35.0 (/usr/bin/tar)
-- ✅ OK curl 8.18.0 (/usr/bin/curl)
-  curl 8.18.0 (x86_64-pc-linux-gnu) libcurl/8.18.0 OpenSSL/3.5.5 zlib/1.3.1 brotli/1.2.0 zstd/1.5.7 libidn2/2.3.8 libpsl/0.21.2 libssh2/1.11.1 nghttp2/1.68.0 librtmp/2.3 mit-krb5/1.22.1 OpenLDAP/2.6.10
-  Release-Date: 2026-01-07, security patched: 8.18.0-1ubuntu2.1
-  Protocols: dict file ftp ftps gopher gophers http https imap imaps ipfs ipns ldap ldaps mqtt pop3 pop3s rtmp rtsp scp sftp smb smbs smtp smtps telnet tftp ws wss
-  Features: alt-svc AsynchDNS brotli GSS-API HSTS HTTP2 HTTPS-proxy IDN IPv6 Kerberos Largefile libz NTLM PSL SPNEGO SSL threadsafe TLS-SRP UnixSockets zstd
-
-OS Info ~
-- sysname: Linux
-- machine: x86_64
-- version: #1 SMP PREEMPT_DYNAMIC Mon Dec  1 20:46:23 UTC 2025
-- release: 6.6.114.1-microsoft-standard-WSL2
-
-Install directory for parsers and queries ~
-- /home/tkt31/.local/share/nvim/site
-- ✅ OK is writable.
-- ❌ ERROR is not in runtimepath.
-
-Installed languages     H L F I J ~
-- bash                  ✓ ✓ ✓ ✓ ✓
-- c                     ✓ ✓ ✓ ✓ ✓
-- cpp                   ✓ ✓ ✓ ✓ ✓
-- lua                   ✓ ✓ ✓ ✓ ✓
-- markdown              ✓ . ✓ ✓ ✓
-- markdown_inline       ✓ . . . ✓
-- python                ✓ ✓ ✓ ✓ ✓
-- vim                   ✓ ✓ ✓ . ✓
-
-  Legend: H[ighlights], L[ocals], F[olds], I[ndents], In[J]ections ~
 
 ==============================================================================
 vim.deprecated:                                                             ✅
@@ -148,9 +98,9 @@ vim.deprecated:                                                             ✅
 vim.health:                                                               1 ⚠️
 
 System Info ~
-- ⚠️ WARNING Nvim 0.12.3 is available (current: 0.12.2)
+- ⚠️ WARNING Nvim 0.12.4 is available (current: 0.12.2)
 - Nvim version: `v0.12.2` 
-- Operating system: Linux 6.6.114.1-microsoft-standard-WSL2
+- Operating system: Linux 6.18.33.2-microsoft-standard-WSL2
 - Terminal: unknown
 - $TERM: xterm-256color
 
@@ -176,7 +126,7 @@ External Tools ~
 - ✅ OK git version 2.53.0 (/usr/bin/git)
 - ✅ OK curl 8.18.0 (/usr/bin/curl)
   curl 8.18.0 (x86_64-pc-linux-gnu) libcurl/8.18.0 OpenSSL/3.5.5 zlib/1.3.1 brotli/1.2.0 zstd/1.5.7 libidn2/2.3.8 libpsl/0.21.2 libssh2/1.11.1 nghttp2/1.68.0 librtmp/2.3 mit-krb5/1.22.1 OpenLDAP/2.6.10
-  Release-Date: 2026-01-07, security patched: 8.18.0-1ubuntu2.1
+  Release-Date: 2026-01-07, security patched: 8.18.0-1ubuntu2.3
   Protocols: dict file ftp ftps gopher gophers http https imap imaps ipfs ipns ldap ldaps mqtt pop3 pop3s rtmp rtsp scp sftp smb smbs smtp smtps telnet tftp ws wss
   Features: alt-svc AsynchDNS brotli GSS-API HSTS HTTP2 HTTPS-proxy IDN IPv6 Kerberos Largefile libz NTLM PSL SPNEGO SSL threadsafe TLS-SRP UnixSockets zstd
 
@@ -185,7 +135,7 @@ vim.lsp:                                                                    ✅
 
 - LSP log level : WARN
 - Log path: /home/tkt31/.local/state/nvim/lsp.log
-- Log size: 2219 KB
+- Log size: 2260 KB
 
 vim.lsp: Active Features ~
 
@@ -193,137 +143,6 @@ vim.lsp: Active Clients ~
 - No active clients
 
 vim.lsp: Enabled Configurations ~
-- clangd:
-  - capabilities: {
-      offsetEncoding = { "utf-8", "utf-16" },
-      textDocument = {
-        completion = {
-          completionItem = {
-            commitCharactersSupport = true,
-            deprecatedSupport = true,
-            insertReplaceSupport = true,
-            insertTextModeSupport = {
-              valueSet = { 1, 2 }
-            },
-            labelDetailsSupport = true,
-            preselectSupport = true,
-            resolveSupport = {
-              properties = { "documentation", "additionalTextEdits", "insertTextFormat", "insertTextMode", "command" }
-            },
-            snippetSupport = true,
-            tagSupport = {
-              valueSet = { 1 }
-            }
-          },
-          completionList = {
-            itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
-          },
-          contextSupport = true,
-          dynamicRegistration = false,
-          editsNearCursor = true,
-          insertTextMode = 1
-        }
-      }
-    }
-  - cmd: { "clangd", "--background-index", "--clang-tidy" }
-  - filetypes: c, cpp, objc, objcpp, cuda
-  - on_attach: <function @/home/tkt31/.local/share/nvim/lazy/nvim-lspconfig/lsp/clangd.lua:91>
-  - on_init: <function @/home/tkt31/.local/share/nvim/lazy/nvim-lspconfig/lsp/clangd.lua:86>
-  - root_markers: { ".clangd", ".clang-tidy", ".clang-format", "compile_commands.json", "compile_flags.txt", "configure.ac", ".git" }
-
-- lua_ls:
-  - capabilities: {
-      textDocument = {
-        completion = {
-          completionItem = {
-            commitCharactersSupport = true,
-            deprecatedSupport = true,
-            insertReplaceSupport = true,
-            insertTextModeSupport = {
-              valueSet = { 1, 2 }
-            },
-            labelDetailsSupport = true,
-            preselectSupport = true,
-            resolveSupport = {
-              properties = { "documentation", "additionalTextEdits", "insertTextFormat", "insertTextMode", "command" }
-            },
-            snippetSupport = true,
-            tagSupport = {
-              valueSet = { 1 }
-            }
-          },
-          completionList = {
-            itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
-          },
-          contextSupport = true,
-          dynamicRegistration = false,
-          insertTextMode = 1
-        }
-      }
-    }
-  - cmd: { "lua-language-server" }
-  - filetypes: lua
-  - root_markers: { { ".emmyrc.json", ".luarc.json", ".luarc.jsonc" }, { ".luacheckrc", ".stylua.toml", "stylua.toml", "selene.toml", "selene.yml" }, { ".git" } }
-  - settings: {
-      Lua = {
-        codeLens = {
-          enable = true
-        },
-        diagnostics = {
-          globals = { "vim" }
-        },
-        hint = {
-          enable = true,
-          semicolon = "Disable"
-        }
-      }
-    }
-
-- pyright:
-  - capabilities: {
-      textDocument = {
-        completion = {
-          completionItem = {
-            commitCharactersSupport = true,
-            deprecatedSupport = true,
-            insertReplaceSupport = true,
-            insertTextModeSupport = {
-              valueSet = { 1, 2 }
-            },
-            labelDetailsSupport = true,
-            preselectSupport = true,
-            resolveSupport = {
-              properties = { "documentation", "additionalTextEdits", "insertTextFormat", "insertTextMode", "command" }
-            },
-            snippetSupport = true,
-            tagSupport = {
-              valueSet = { 1 }
-            }
-          },
-          completionList = {
-            itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
-          },
-          contextSupport = true,
-          dynamicRegistration = false,
-          insertTextMode = 1
-        }
-      }
-    }
-  - cmd: { "pyright-langserver", "--stdio" }
-  - filetypes: python
-  - on_attach: <function @/home/tkt31/.local/share/nvim/lazy/nvim-lspconfig/lsp/pyright.lua:46>
-  - root_markers: { "pyrightconfig.json", "pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", "Pipfile", ".git" }
-  - settings: {
-      python = {
-        analysis = {
-          autoSearchPaths = true,
-          diagnosticMode = "openFilesOnly",
-          typeCheckingMode = "basic",
-          useLibraryCodeForTypes = true
-        }
-      }
-    }
-
 
 vim.lsp: File Watcher ~
 - file watching "(workspace/didChangeWatchedFiles)" disabled on all clients
@@ -394,7 +213,9 @@ Treesitter parsers ~
 - ✅ OK Parser: bash                      ABI: 15, path: /home/tkt31/.local/share/nvim/site/parser/bash.so
 - ✅ OK Parser: c                         ABI: 15, path: /home/tkt31/.local/share/nvim/site/parser/c.so
 - ✅ OK Parser: c                    (not loaded), path: /home/tkt31/.local/share/mise/installs/github-neovim-neovim/0.12.2/lib/nvim/parser/c.so
-- ✅ OK Parser: cpp                       ABI: 14, path: /home/tkt31/.local/share/nvim/site/parser/cpp.so
+- ✅ OK Parser: cpp                       ABI: 15, path: /home/tkt31/.local/share/nvim/site/parser/cpp.so
+- ✅ OK Parser: ipynb                     ABI: 15, path: /home/tkt31/.local/share/nvim/site/parser/ipynb.so
+- ✅ OK Parser: json                      ABI: 14, path: /home/tkt31/.local/share/nvim/site/parser/json.so
 - ✅ OK Parser: lua                       ABI: 15, path: /home/tkt31/.local/share/nvim/site/parser/lua.so
 - ✅ OK Parser: lua                  (not loaded), path: /home/tkt31/.local/share/mise/installs/github-neovim-neovim/0.12.2/lib/nvim/parser/lua.so
 - ✅ OK Parser: markdown                  ABI: 15, path: /home/tkt31/.local/share/nvim/site/parser/markdown.so
@@ -426,10 +247,18 @@ Treesitter queries ~
 - ✅ OK cpp             indents         /home/tkt31/.local/share/nvim/site/queries/cpp
 - ✅ OK cpp             injections      /home/tkt31/.local/share/nvim/site/queries/cpp
 - ✅ OK cpp             locals          /home/tkt31/.local/share/nvim/site/queries/cpp
+- ✅ OK css             highlights      /home/tkt31/.local/share/nvim/lazy/solarized.nvim/after/queries/css
+- ✅ OK javascript      highlights      /home/tkt31/.local/share/nvim/lazy/solarized.nvim/after/queries/javascript
+- ✅ OK json            folds           /home/tkt31/.local/share/nvim/site/queries/json
+- ✅ OK json            highlights      /home/tkt31/.local/share/nvim/site/queries/json
+- ✅ OK json            indents         /home/tkt31/.local/share/nvim/site/queries/json
+- ✅ OK json            injections      /home/tkt31/.local/share/nvim/site/queries/json
+- ✅ OK json            locals          /home/tkt31/.local/share/nvim/site/queries/json
 - ✅ OK lua             folds           /home/tkt31/.local/share/nvim/site/queries/lua
 - ✅ OK lua             folds           /home/tkt31/.local/share/mise/installs/github-neovim-neovim/0.12.2/share/nvim/runtime/queries/lua
 - ✅ OK lua             highlights      /home/tkt31/.local/share/nvim/site/queries/lua
 - ✅ OK lua             highlights      /home/tkt31/.local/share/mise/installs/github-neovim-neovim/0.12.2/share/nvim/runtime/queries/lua
+- ✅ OK lua             highlights      /home/tkt31/.local/share/nvim/lazy/solarized.nvim/after/queries/lua
 - ✅ OK lua             indents         /home/tkt31/.local/share/nvim/site/queries/lua
 - ✅ OK lua             injections      /home/tkt31/.local/share/nvim/site/queries/lua
 - ✅ OK lua             injections      /home/tkt31/.local/share/mise/installs/github-neovim-neovim/0.12.2/share/nvim/runtime/queries/lua
@@ -452,6 +281,8 @@ Treesitter queries ~
 - ✅ OK python          locals          /home/tkt31/.local/share/nvim/site/queries/python
 - ✅ OK query           folds           /home/tkt31/.local/share/mise/installs/github-neovim-neovim/0.12.2/share/nvim/runtime/queries/query
 - ✅ OK query           highlights      /home/tkt31/.local/share/mise/installs/github-neovim-neovim/0.12.2/share/nvim/runtime/queries/query
+- ✅ OK scss            highlights      /home/tkt31/.local/share/nvim/lazy/solarized.nvim/after/queries/scss
+- ✅ OK tsx             highlights      /home/tkt31/.local/share/nvim/lazy/solarized.nvim/after/queries/tsx
 - ✅ OK vim             folds           /home/tkt31/.local/share/nvim/site/queries/vim
 - ✅ OK vim             folds           /home/tkt31/.local/share/mise/installs/github-neovim-neovim/0.12.2/share/nvim/runtime/queries/vim
 - ✅ OK vim             highlights      /home/tkt31/.local/share/nvim/site/queries/vim
@@ -461,4 +292,28 @@ Treesitter queries ~
 - ✅ OK vim             locals          /home/tkt31/.local/share/nvim/site/queries/vim
 - ✅ OK vimdoc          highlights      /home/tkt31/.local/share/mise/installs/github-neovim-neovim/0.12.2/share/nvim/runtime/queries/vimdoc
 - ✅ OK vimdoc          injections      /home/tkt31/.local/share/mise/installs/github-neovim-neovim/0.12.2/share/nvim/runtime/queries/vimdoc
+
+==============================================================================
+which-key:                                                                2 ⚠️
+
+- ✅ OK Most of these checks are for informational purposes only.
+  WARNINGS should be treated as a warning, and don't necessarily indicate a problem with your config.
+  Please |DON'T| report these warnings as an issue.
+
+Checking your config ~
+- ⚠️ WARNING |mini.icons| is not installed
+- ✅ OK |nvim-web-devicons| is installed
+
+Checking for issues with your mappings ~
+- ✅ OK No issues reported
+
+checking for overlapping keymaps ~
+- ⚠️ WARNING In mode `n`, <gc> overlaps with <gcc>:
+  - <gc>: Toggle comment
+  - <gcc>: Toggle comment line
+- ✅ OK Overlapping keymaps are only reported for informational purposes.
+  This doesn't necessarily mean there is a problem with your config.
+
+Checking for duplicate mappings ~
+- ✅ OK No duplicate mappings found
 
