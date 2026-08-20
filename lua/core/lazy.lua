@@ -24,6 +24,6 @@ require("lazy").setup({
     notify = false,
   },
   rocks = {
-    hererocks = false,
+    enabled = false,
   }
 })

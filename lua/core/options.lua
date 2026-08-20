@@ -1,5 +1,11 @@
 local opt = vim.opt
 
+-- Provider
+vim.g.loaded_node_provider = 0
+vim.g.loaded_perl_provider = 0
+vim.g.loaded_python3_provider = 0
+vim.g.loaded_ruby_provider = 0
+
 -- Line numbers
 opt.relativenumber = true
 opt.number = true
@@ -39,10 +45,3 @@ opt.clipboard = 'unnamedplus'
 -- Folding
 opt.foldlevel = 99
 opt.foldlevelstart = 99
--- opt.fillchars:append({
---   foldopen = "",
---   foldclose = "",
---   foldsep = "│",
---   fold = " ",
--- })
--- opt.foldcolumn = "1"
